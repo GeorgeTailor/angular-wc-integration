@@ -4,7 +4,7 @@
 	<zoo-select valid="{{!form.controls.select.touched || form.controls.select.valid ? 1 : ''}}" 
 		inputerrormsg="Name is required" labeltext="Name">
 		<select formControlName="select" slot="selectelement">
-			<option *ngFor="let option of options" [value]="option.id">{{ option.firstName }} {{ fc.lastName }}</option>
+			<option *ngFor="let option of options" [value]="option.id">{{ option.firstName }} {{ option.lastName }}</option>
 		</select>
 	</zoo-select>
 	<zoo-input valid="{{!form.controls.input.touched || form.controls.input.valid ? 1 : ''}}" 

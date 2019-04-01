@@ -8,6 +8,12 @@ import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms'
 })
 export class AppComponent implements OnInit {
 	form: FormGroup;
+	options = [
+		{
+			firstName: 'firstName',
+			lastName: 'lastName'
+		}
+	]
 
 	constructor(private fb: FormBuilder) {}
 
