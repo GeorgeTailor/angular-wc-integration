@@ -39,7 +39,7 @@
 		<label for="input-id1" slot="inputlabel">Input date field</label>
 	</zoo-input>
   
-	<zoo-button class="submit-button" size="small" (click)="submit(form)">
+	<zoo-button (click)="submit(form)">
 		<button type="button">Submit</button>
 	</zoo-button>
 </form>
