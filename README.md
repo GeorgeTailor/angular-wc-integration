@@ -44,3 +44,21 @@
 	</zoo-button>
 </form>
 ```
+
+5. Add CSS Custom properties to your main `styles.css`:
+```CSS
+:root {
+	--primary-mid: #3C9700;
+	--primary-light: #66B100;
+	--primary-dark: #286400;
+	--primary-ultralight: #EBF4E5;
+	--secondary-mid: #FF6200;
+	--secondary-light: #F80;
+	--secondary-dark: #CC4E00;
+	--info-ultralight: #ECF5FA;
+	--info-mid: #459FD0;
+	--warning-ultralight: #FDE8E9;
+	--warning-mid: #ED1C24;
+}
+```
+
