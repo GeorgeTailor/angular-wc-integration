@@ -21,7 +21,9 @@
 ```
 4. Use web components in your application:
 ```HTML
-<zoo-header imgsrc="assets/logo.png" headertext="Zoo web components in Angular"></zoo-header>
+<zoo-header headertext="Zoo web components in Angular">
+  <img slot="img" alt="Zooplus logo" src="assets/logo.png"/>
+</zoo-header>
 
 <form class="form" [formGroup]="form" (ngSubmit)="submit(form)">
 	<zoo-select invalid="{{form.controls.select.touched && !form.controls.select.valid ? 1 : ''}}" 
