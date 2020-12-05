@@ -3,7 +3,7 @@
 ## Setup
 
 1. Run `npm i @zooplus/zoo-web-components --save` to install the package.
-2. Modify you main `app.module.ts` and add the following line: `import "../../node_modules/@zooplus/zoo-web-components/dist/zoo-components-esm.js";`
+2. Modify you main `app.module.ts` and add the following line: `import "@zooplus/zoo-web-components";`
 3. Modify your NgModule declaration so that it knows how to treat unknown HTML tags:
 ```TS
 @NgModule({
