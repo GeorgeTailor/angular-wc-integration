@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "update": "ng update @angular/core @angular/cli"
+    "update": "ng update @angular/core @angular/cli --force"
   },
   "private": true,
   "dependencies": {
