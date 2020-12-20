@@ -24,15 +24,8 @@ export class AppComponent implements OnInit {
 		}, {});
 	}
 
-	submit(form: FormGroup) {
-		Object.keys(form.controls).forEach(field => {
-			const control = form.get(field);
-			if (control instanceof FormControl) {
-				control.markAsTouched({ onlySelf: true });
-			}
-		});
-		if (!form.valid) {
-			return;
-		}
+	submit(e: any) {
+		e.preventDefault();
+		e.target.checkValidity();
 	}
 }
