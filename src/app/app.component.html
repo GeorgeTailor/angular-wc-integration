@@ -3,16 +3,18 @@
 	<h1 slot="headertext">Zoo web components in Angular</h1>
 </zoo-header>
 
-<form class="form" [formGroup]="form" (ngSubmit)="submit($event)" novalidate>
+<form class="form" (submit)="submit($event)" novalidate>
 	<zoo-select>
-		<select id="select-id" formControlName="select" slot="select" required>
-			<option *ngFor="let option of options" [value]="option.id">{{ option.firstName }} {{ option.lastName }}</option>
+		<select id="select-id" slot="select" required>
+			<option>Please, select a value</option>
+			<option *ngFor="let option of options" [value]="option.id">{{ option.firstName }} {{ option.lastName }}
+			</option>
 		</select>
 		<label for="select-id1" slot="label">Name</label>
 		<span slot="error">Name is required</span>
 	</zoo-select>
 	<zoo-input>
-		<input id="input-id" formControlName="input" type="date" slot="input" required/>
+		<input id="input-id" type="date" slot="input" required />
 		<label for="input-id1" slot="label">Input date field</label>
 		<span slot="info">Information text</span>
 		<span slot="error">Invalid value</span>
