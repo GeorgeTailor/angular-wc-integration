@@ -6,7 +6,7 @@
 <form class="form" (submit)="submit($event)" novalidate>
 	<zoo-select>
 		<select id="select-id" slot="select" required>
-			<option>Please, select a value</option>
+			<option disabled selected value="">Please choose an option</option>
 			<option *ngFor="let option of options" [value]="option.id">{{ option.firstName }} {{ option.lastName }}
 			</option>
 		</select>
